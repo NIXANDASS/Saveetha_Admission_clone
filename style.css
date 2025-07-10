@@ -1,0 +1,106 @@
+body{
+    display: flexbox;
+    opacity: 0.6;
+    transition: opacity 1s ease-in-out;
+    background-image:url("image.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+    
+}
+header{
+    background-image:url(logo.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:150px;
+    margin-left:5%;
+ 
+}
+header>div{
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-left:6%;
+    padding-top:1%;
+    letter-spacing:2.5px;
+    line-height:130%;
+    color: white;
+}
+h1{
+    color: yellow;
+}
+#sub{
+    color: white;
+}
+.page{
+    display:flex;
+    justify-content: space-between;
+}
+.intro{
+    margin-top:8% ;
+    font-size: xx-large;
+    margin-left: 8%;
+}
+.form{
+    display: flex;
+    flex-direction:column;
+    background-color: rgba(0, 0, 0,0.2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+    
+
+.split{
+    display:flex;
+    flex-direction: column;
+    /* flex-shrink: 1;  */
+    
+    
+}
+.split1{
+    display: flex;
+    width: 100%;
+    
+}
+.split2{
+    display: flex;
+    /* flex:; */
+    /* flex-grow: 1; */
+    
+    width: 100%;
+    
+    
+    /* gap:10px */
+}
+
+p{
+    display: flex;
+
+}
+.checkbox{
+    color:white;
+    font-size:medium;
+    margin-top:8px;
+    
+}
+
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        background: none;
+        background-color: #000;
+    }
+
+    .right {
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
